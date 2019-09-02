@@ -1,0 +1,9 @@
+---
+# tasks file for shellcheck - Ubuntu
+
+- name: Installing {{ shellcheck_app_debian_package }} on Debian based systems.
+  apt:
+    name: "{{ shellcheck_app_debian_package }}"
+    state: "{{ shellcheck_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes

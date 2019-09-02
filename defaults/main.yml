@@ -1,0 +1,5 @@
+---
+# defaults file for shellcheck
+shellcheck_app_debian_package: shellcheck
+shellcheck_app_el_package: ShellCheck
+shellcheck_desired_state: present

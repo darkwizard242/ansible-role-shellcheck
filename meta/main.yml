@@ -1,0 +1,30 @@
+---
+galaxy_info:
+  role_name: shellcheck
+  author: Ali Muhammad
+  description: For dynamically installing or uninstalling 'shellcheck' package.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+        - buster
+    - name: EL
+      versions:
+        - 7
+
+  galaxy_tags:
+    - shellcheck
+    - scripting
+    - system
+    - os
+
+dependencies: []

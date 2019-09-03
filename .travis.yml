@@ -12,7 +12,7 @@ services:
   - docker
 
 env:
-  - ROLE_NAME: shellcheck 
+  - ROLE_NAME: shellcheck
 
 addons:
   sonarcloud:

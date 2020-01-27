@@ -2,7 +2,7 @@
 
 # Ansible Role: shellcheck
 
-Role to install (_by default_) `shellcheck` package or uninstall (_if passed as var_) on **Debian** based and **CentOS** based systems.
+Role to install (_by default_) `shellcheck` package or uninstall (_if passed as var_) on **Debian** based and **EL** based systems.
 
 ## Requirements
 

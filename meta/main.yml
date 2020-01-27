@@ -26,5 +26,7 @@ galaxy_info:
     - scripting
     - system
     - os
+    - linux
+    - bash
 
 dependencies: []

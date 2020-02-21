@@ -3,7 +3,8 @@ dependency:
   name: galaxy
 driver:
   name: docker
-lint: yamllint
+lint:
+  cmd: yamllint && ansiblelint && flake8
 platforms:
   - name: ${DISTRO:-ubuntu-18.04}
     image: "darkwizard242/ansible:${DISTRO:-ubuntu-18.04}"
@@ -14,8 +15,6 @@ platforms:
 provisioner:
   name: ansible
   log: true
-  lint:
-    name: ansible-lint
 scenario:
   name: default
   test_sequence:
@@ -31,5 +30,3 @@ verifier:
   name: testinfra
   options:
     verbose: true
-  lint:
-    name: flake8

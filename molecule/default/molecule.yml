@@ -3,8 +3,7 @@ dependency:
   name: galaxy
 driver:
   name: docker
-lint:
-  name: yamllint
+lint: yamllint
 platforms:
   - name: ${DISTRO:-ubuntu-18.04}
     image: "darkwizard242/ansible:${DISTRO:-ubuntu-18.04}"

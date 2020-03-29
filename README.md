@@ -2,7 +2,7 @@
 
 # Ansible Role: shellcheck
 
-Role to install (_by default_) `shellcheck` package or uninstall (_if passed as var_) on **Debian** based and **EL** based systems.
+Role to install (_by default_) [shellcheck](https://github.com/koalaman/shellcheck) package or uninstall (_if passed as var_) on **Debian** based and **EL** based systems.
 
 ## Requirements
 
@@ -39,7 +39,7 @@ For default behaviour of role (i.e. installation of **shellcheck** package) in a
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.shellcheck
+    - darkwizard242.shellcheck
 ```
 
 For customizing behavior of role (i.e. installation of latest **shellcheck** package) in ansible playbooks.
@@ -47,9 +47,9 @@ For customizing behavior of role (i.e. installation of latest **shellcheck** pac
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.shellcheck
-      vars:
-        shellcheck_desired_state: latest
+    - darkwizard242.shellcheck
+  vars:
+    shellcheck_desired_state: latest
 ```
 
 For customizing behavior of role (i.e. un-installation of **shellcheck** package) in ansible playbooks.
@@ -57,9 +57,9 @@ For customizing behavior of role (i.e. un-installation of **shellcheck** package
 ```yaml
 - hosts: servers
   roles:
-    - role: darkwizard242.shellcheck
-      vars:
-        shellcheck_desired_state: absent
+    - darkwizard242.shellcheck
+  vars:
+    shellcheck_desired_state: absent
 ```
 
 ## License

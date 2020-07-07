@@ -1,12 +1,13 @@
 ---
-# tasks file for shellcheck - CentOS
+# tasks file for shellcheck - EL Family
 
-- name: Installing epel-release on EL systems
+- name: EL Family | Installing epel-release
   package:
     name: epel-release
     state: present
     update_cache: yes
-- name: Installing "{{ shellcheck_app_el_package }}" on EL systems
+
+- name: EL Family | Installing {{ shellcheck_app_el_package }}
   package:
     name: "{{ shellcheck_app_el_package }}"
     state: "{{ shellcheck_desired_state }}"

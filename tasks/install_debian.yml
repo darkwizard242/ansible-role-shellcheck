@@ -1,7 +1,7 @@
 ---
-# tasks file for shellcheck - Ubuntu
+# tasks file for shellcheck - Debian/Ubuntu Family
 
-- name: Installing {{ shellcheck_app_debian_package }} on Debian based systems.
+- name: Debian/Ubuntu Family | Installing {{ shellcheck_app_debian_package }}
   apt:
     name: "{{ shellcheck_app_debian_package }}"
     state: "{{ shellcheck_desired_state }}"

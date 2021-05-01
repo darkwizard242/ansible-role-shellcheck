@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: shellcheck
-  author: Ali Muhammad
+  author: darkwizard242
   description: For dynamically installing or uninstalling 'shellcheck' package.
   company: none
   license: MIT

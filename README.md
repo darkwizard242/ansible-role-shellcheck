@@ -22,11 +22,11 @@ shellcheck_desired_state: present
 
 ### Variables table:
 
-Variable                      | Value (default) | Description
------------------------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------
-shellcheck_app_debian_package | shellcheck      | Defines the app to install on Debian based systems i.e. **shellcheck**
-shellcheck_app_el_package     | ShellCheck      | Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **ShellCheck**
-shellcheck_desired_state      | present         | Defined to dynamically select whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default set to `present`.
+Variable                      | Description
+----------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------
+shellcheck_app_debian_package | Defines the app to install on Debian based systems i.e. **shellcheck**
+shellcheck_app_el_package     | Defines the app to install on Enterprise Linux (Redhat/CentOS) systems i.e. **ShellCheck**
+shellcheck_desired_state      | Defined to dynamically select whether to install (i.e. either `present` or `latest`) or uninstall (i.e. `absent`) the package. Default set to `present`.
 
 ## Dependencies
 
@@ -68,4 +68,4 @@ For customizing behavior of role (i.e. un-installation of **shellcheck** package
 
 ## Author Information
 
-This role was created by [Ali Muhammad](https://www.linkedin.com/in/ali-muhammad-759791130/).
+This role was created by [Ali Muhammad](https://www.alimuhammad.dev/).

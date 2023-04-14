@@ -2,7 +2,7 @@
 # tasks file for shellcheck - Debian/Ubuntu Family
 
 - name: Debian/Ubuntu Family | Installing {{ shellcheck_app_debian_package }}
-  apt:
+  ansible.builtin.apt:
     name: "{{ shellcheck_app_debian_package }}"
     state: "{{ shellcheck_desired_state }}"
     force_apt_get: yes

@@ -2,13 +2,13 @@
 # tasks file for shellcheck - EL Family
 
 - name: EL Family | Installing epel-release
-  package:
+  ansible.builtin.package:
     name: epel-release
     state: present
     update_cache: yes
 
 - name: EL Family | Installing {{ shellcheck_app_el_package }}
-  package:
+  ansible.builtin.package:
     name: "{{ shellcheck_app_el_package }}"
     state: "{{ shellcheck_desired_state }}"
     update_cache: yes

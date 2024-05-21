@@ -8,4 +8,4 @@ yamllint
 ansible-lint
 flake8
 pytest-testinfra
-requests
+requests>=2.32.0
